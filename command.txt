@@ -1,0 +1,16 @@
+sys reset
+mac reset ind865
+mac set adr on
+mac set edclass a
+mac set deveui 0000000000DEVEUI
+mac set appeui 0000000000APPEUI
+mac set appkey 00000000000000000000000000APPKEY
+mac set devaddr 0DEVADDR
+mac set rx2 0 865200000
+mac set nwkskey 0000000000000000NETWORKSECRETKEY
+mac set appskey 00000000000000000000APPSECRETKEY
+mac save
+mac join abp
+mac tx cnf 1 1225
+mac tx cnf 1 1010
+mac tx cnf 11 111111
